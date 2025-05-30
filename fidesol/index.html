@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Consulta de Países</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <h1>Consulta de Países</h1>
+
+  <div class="controls">
+    <button id="allBtn">Todos los Países</button>
+
+    <select id="continentSelect">
+      <option value="">-- Selecciona un continente --</option>
+      <option value="africa">África</option>
+      <option value="americas">Américas</option>
+      <option value="asia">Asia</option>
+      <option value="europe">Europa</option>
+      <option value="oceania">Oceanía</option>
+    </select>
+
+    <input type="text" id="countryInput" placeholder="Nombre del país" />
+    <button id="searchBtn">Buscar</button>
+
+    <input type="number" id="minPop" placeholder="Población mínima">
+    <input type="number" id="maxPop" placeholder="Población máxima">
+
+    <select id="languageSelect">
+        <option value="">--Filtrar por idioma--</option>
+    </select>
+
+  </div>
+
+  <div id="results"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
